@@ -1,0 +1,10 @@
+{
+  "name": "@apps/bookmyshow-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "echo 'BookMyShow web scaffold created. Plug into Vite/Next in next step.'",
+    "lint": "echo 'No lints configured yet for bookmyshow-web'"
+  }
+}
