@@ -1,0 +1,6 @@
+{
+  "name": "@codex/catalog-service",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/endpoints.ts"
+}
