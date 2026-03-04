@@ -1,0 +1,16 @@
+{
+  "name": "@services/booking-service",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "echo 'booking-service dev placeholder'",
+    "build": "echo 'booking-service build placeholder'",
+    "lint": "echo 'booking-service lint placeholder'",
+    "format": "prettier --check .",
+    "typecheck": "echo 'booking-service typecheck placeholder'"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

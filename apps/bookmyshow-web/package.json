@@ -1,0 +1,16 @@
+{
+  "name": "@apps/bookmyshow-web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "echo 'bookmyshow-web dev placeholder'",
+    "build": "echo 'bookmyshow-web build placeholder'",
+    "lint": "echo 'bookmyshow-web lint placeholder'",
+    "format": "prettier --check .",
+    "typecheck": "echo 'bookmyshow-web typecheck placeholder'"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

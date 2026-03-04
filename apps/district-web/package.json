@@ -1,0 +1,16 @@
+{
+  "name": "@apps/district-web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "echo 'district-web dev placeholder'",
+    "build": "echo 'district-web build placeholder'",
+    "lint": "echo 'district-web lint placeholder'",
+    "format": "prettier --check .",
+    "typecheck": "echo 'district-web typecheck placeholder'"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
