@@ -3,21 +3,32 @@
 This repository currently has multiple remote feature branches and open PRs.
 Use this checklist to finish safely.
 
-## 1) Sync your local repo
+## 0) Sync local repo first (mandatory)
+
+Run these commands before reviewing or merging any PR:
 
 ```bash
 git fetch origin --prune
 git checkout main
-git pull origin main
+git pull --ff-only origin main
+git checkout work
+git merge --ff-only main
 ```
 
-## 2) See what is still not merged into `main`
+If `origin` is missing, add it first:
+
+```bash
+git remote add origin https://github.com/kumarparmar3101/codex-project.git
+git fetch origin --prune
+```
+
+## 1) See what is still not merged into `main`
 
 ```bash
 git branch -r --no-merged origin/main
 ```
 
-## 3) Merge PRs in this order
+## 2) Merge PRs in this order
 
 1. `codex/set-up-monorepo-layout-and-tooling`
 2. `codex/plan-cloning-of-district-and-bookmyshow-apps`
@@ -30,14 +41,14 @@ git branch -r --no-merged origin/main
 
 > If two PRs look like duplicates (for example, same feature with a random suffix), keep the cleaner one and close the duplicate.
 
-## 4) For each PR on GitHub
+## 3) For each PR on GitHub
 
 - Open the PR
 - Confirm checks are green
 - Resolve any merge conflicts
 - Use **Squash and merge**
 
-## 5) Clean up merged branches
+## 4) Clean up merged branches
 
 After each merge:
 
@@ -48,11 +59,11 @@ git branch -r --merged origin/main
 
 Delete merged remote branches from GitHub (or with `git push origin --delete <branch>`).
 
-## 6) Final sanity check
+## 5) Final sanity check
 
 ```bash
 git checkout main
-git pull origin main
+git pull --ff-only origin main
 git branch -r --no-merged origin/main
 ```
 
