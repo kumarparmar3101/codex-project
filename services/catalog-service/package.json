@@ -1,0 +1,16 @@
+{
+  "name": "@services/catalog-service",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "echo 'catalog-service dev placeholder'",
+    "build": "echo 'catalog-service build placeholder'",
+    "lint": "echo 'catalog-service lint placeholder'",
+    "format": "prettier --check .",
+    "typecheck": "echo 'catalog-service typecheck placeholder'"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

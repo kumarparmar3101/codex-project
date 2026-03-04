@@ -1,0 +1,15 @@
+{
+  "name": "@workspace/types",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo 'types build placeholder'",
+    "lint": "echo 'types lint placeholder'",
+    "format": "prettier --check .",
+    "typecheck": "echo 'types typecheck placeholder'"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
