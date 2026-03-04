@@ -1,12 +1,8 @@
 {
-  "name": "district-web",
+  "name": "@apps/district-web",
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "dependencies": {
-    "@shared/apis": "workspace:*",
-    "@shared/ui": "workspace:*"
-  },
   "scripts": {
     "dev": "echo 'district-web dev placeholder'",
     "build": "echo 'district-web build placeholder'",

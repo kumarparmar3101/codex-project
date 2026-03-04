@@ -1,24 +1,13 @@
 {
-  "name": "codex-project",
-  "version": "1.0.0",
+  "name": "district-booking-monorepo",
   "private": true,
-  "type": "module",
   "packageManager": "pnpm@9.12.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
-    "lint": "node scripts/lint.js",
-    "typecheck": "node scripts/typecheck.js",
-    "test": "node --test tests/**/*.test.js",
-    "build": "node scripts/build.js",
-    "seed": "node scripts/seed.js",
-    "sync:branches": "node scripts/syncBranches.js",
-    "build:monorepo": "turbo run build",
-    "dev:monorepo": "turbo run dev --parallel",
-    "lint:monorepo": "turbo run lint",
-    "typecheck:monorepo": "turbo run typecheck"
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
     "turbo": "^2.1.3"

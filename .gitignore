@@ -1,10 +1,10 @@
-node_modules/
+node_modules
 .pnpm-store
 .turbo
 .env
 .env.local
 .env.*.local
-dist/
-build/
-coverage/
+dist
+build
+coverage
 .DS_Store
