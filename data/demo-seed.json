@@ -1,0 +1,68 @@
+{
+  "venues": [
+    {
+      "id": "venue-1",
+      "name": "Downtown Cinema Hall",
+      "city": "San Francisco",
+      "capacity": 180
+    },
+    {
+      "id": "venue-2",
+      "name": "Riverside Events Center",
+      "city": "Austin",
+      "capacity": 300
+    }
+  ],
+  "movies": [
+    {
+      "id": "movie-1",
+      "title": "The Last Horizon",
+      "durationMinutes": 124,
+      "genre": "Sci-Fi"
+    },
+    {
+      "id": "movie-2",
+      "title": "City of Echoes",
+      "durationMinutes": 108,
+      "genre": "Drama"
+    }
+  ],
+  "events": [
+    {
+      "id": "event-1",
+      "name": "Stand-up Night Live",
+      "category": "Comedy"
+    },
+    {
+      "id": "event-2",
+      "name": "Indie Music Showcase",
+      "category": "Concert"
+    }
+  ],
+  "schedules": [
+    {
+      "id": "schedule-1",
+      "contentId": "movie-1",
+      "venueId": "venue-1",
+      "startsAt": "2026-04-10T18:30:00Z"
+    },
+    {
+      "id": "schedule-2",
+      "contentId": "movie-2",
+      "venueId": "venue-1",
+      "startsAt": "2026-04-10T21:00:00Z"
+    },
+    {
+      "id": "schedule-3",
+      "contentId": "event-1",
+      "venueId": "venue-2",
+      "startsAt": "2026-04-11T02:00:00Z"
+    },
+    {
+      "id": "schedule-4",
+      "contentId": "event-2",
+      "venueId": "venue-2",
+      "startsAt": "2026-04-11T04:00:00Z"
+    }
+  ]
+}
