@@ -1,0 +1,9 @@
+{
+  "name": "codex-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Versioned cinema platform service APIs",
+  "scripts": {
+    "check": "node --check services/catalog/server.js && node --check services/booking/server.js && node --check services/user/server.js && node --check services/payment/server.js && node --check packages/types/index.js"
+  }
+}
