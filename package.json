@@ -1,0 +1,17 @@
+{
+  "name": "entertainment-clones-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "District + BookMyShow inspired clone stack",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "check": "npm run lint --workspaces --if-present && npm run test --workspaces --if-present",
+    "dev:district": "npm --workspace @apps/district-web run dev",
+    "dev:bms": "npm --workspace @apps/bookmyshow-web run dev",
+    "dev:gateway": "npm --workspace @apps/api-gateway run dev"
+  }
+}
