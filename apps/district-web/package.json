@@ -1,10 +1,8 @@
 {
-  "name": "@apps/district-web",
-  "version": "0.1.0",
+  "name": "district-web",
   "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "echo 'District web scaffold created. Plug into Vite/Next in next step.'",
-    "lint": "echo 'No lints configured yet for district-web'"
+  "dependencies": {
+    "@shared/apis": "workspace:*",
+    "@shared/ui": "workspace:*"
   }
 }
