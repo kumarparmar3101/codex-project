@@ -1,0 +1,8 @@
+{
+  "name": "district-web",
+  "private": true,
+  "dependencies": {
+    "@shared/apis": "workspace:*",
+    "@shared/ui": "workspace:*"
+  }
+}

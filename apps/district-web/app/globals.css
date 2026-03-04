@@ -1,0 +1,115 @@
+:root {
+  --district-bg: #0b1021;
+  --district-surface: #151b2f;
+  --district-text: #f7f8ff;
+  --district-muted: #9ca7c2;
+  --district-brand: #ff4d67;
+  --district-brand-soft: #3c2034;
+  --district-border: #2a3657;
+
+  /* shared-ui mapping */
+  --ui-bg: var(--district-bg);
+  --ui-surface: var(--district-surface);
+  --ui-text: var(--district-text);
+  --ui-muted: var(--district-muted);
+  --ui-brand: var(--district-brand);
+  --ui-brand-soft: var(--district-brand-soft);
+  --ui-border: var(--district-border);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  background: var(--district-bg);
+  color: var(--district-text);
+}
+
+a {
+  color: #ff9bb0;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.app-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.app-nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.ui-section {
+  margin-bottom: 2rem;
+}
+
+.ui-section__title {
+  margin: 0 0 0.75rem;
+}
+
+.ui-muted {
+  color: var(--ui-muted);
+}
+
+.ui-card {
+  border: 1px solid var(--ui-border);
+  border-radius: 12px;
+  padding: 1rem;
+  background: var(--ui-surface);
+}
+
+.ui-link {
+  text-decoration: underline;
+}
+
+.ui-pill {
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-border);
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+}
+
+.ui-seats-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.ui-seat {
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ui-border);
+  background: var(--ui-surface);
+  text-decoration: none;
+}
+
+.ui-seat--selected {
+  border-color: var(--ui-brand);
+  background: var(--ui-brand-soft);
+}
+
+.ui-button {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ui-button--primary {
+  background: var(--ui-brand);
+  color: white;
+}
