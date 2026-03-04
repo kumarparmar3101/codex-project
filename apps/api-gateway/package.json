@@ -1,16 +1,10 @@
 {
   "name": "@apps/api-gateway",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "echo 'api-gateway dev placeholder'",
-    "build": "echo 'api-gateway build placeholder'",
-    "lint": "echo 'api-gateway lint placeholder'",
-    "format": "prettier --check .",
-    "typecheck": "echo 'api-gateway typecheck placeholder'"
-  },
-  "devDependencies": {
-    "prettier": "^3.3.3"
+    "dev": "node src/server.js",
+    "test": "node --test src/server.test.js"
   }
 }

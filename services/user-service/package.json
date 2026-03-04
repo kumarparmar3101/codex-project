@@ -1,16 +1,10 @@
 {
   "name": "@services/user-service",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "echo 'user-service dev placeholder'",
-    "build": "echo 'user-service build placeholder'",
-    "lint": "echo 'user-service lint placeholder'",
-    "format": "prettier --check .",
-    "typecheck": "echo 'user-service typecheck placeholder'"
-  },
-  "devDependencies": {
-    "prettier": "^3.3.3"
+    "dev": "node src/server.js",
+    "test": "node --test src/server.test.js"
   }
 }

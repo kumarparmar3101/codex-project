@@ -1,16 +1,10 @@
 {
   "name": "@apps/district-web",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "echo 'district-web dev placeholder'",
-    "build": "echo 'district-web build placeholder'",
-    "lint": "echo 'district-web lint placeholder'",
-    "format": "prettier --check .",
-    "typecheck": "echo 'district-web typecheck placeholder'"
-  },
-  "devDependencies": {
-    "prettier": "^3.3.3"
+    "dev": "echo 'District web scaffold created. Plug into Vite/Next in next step.'",
+    "lint": "echo 'No lints configured yet for district-web'"
   }
 }

@@ -1,29 +1,25 @@
-# District Booking Monorepo
+# District + BookMyShow Clone (Monorepo Scaffold)
 
-This repository is organized as a pnpm + Turborepo monorepo.
+This repository now contains the initial scaffold for building two product experiences on top of shared services:
 
-## Layout
+- `apps/district-web`: District-inspired, experience-first frontend.
+- `apps/bookmyshow-web`: BookMyShow-inspired, movie-first frontend.
+- `apps/api-gateway`: Aggregates catalog, booking, and user services.
+- `services/*`: domain services (`catalog-service`, `booking-service`, `user-service`).
+- `packages/ui`: reusable UI primitives.
+- `packages/types`: shared contracts.
 
-- `apps/district-web`
-- `apps/bookmyshow-web`
-- `apps/api-gateway`
-- `packages/ui`
-- `packages/config`
-- `packages/types`
-- `services/booking-service`
-- `services/catalog-service`
-- `services/user-service`
-- `infra/`
+## Quick checks
 
-## Workspace tooling
+```bash
+npm --workspace @services/catalog-service test
+npm --workspace @services/booking-service test
+npm --workspace @services/user-service test
+npm --workspace @apps/api-gateway test
+```
 
-- Package manager: `pnpm` (see `pnpm-workspace.yaml`)
-- Task orchestration/caching: `turbo` (see `turbo.json`)
-- Shared lint/format/tsconfig baseline: `packages/config`
-
-## Environment variable conventions
-
-- Every app/service includes a local `.env.example` template.
-- Keep secrets out of git; copy to `.env` locally.
-- Browser-exposed variables should use framework-specific public prefixes (`NEXT_PUBLIC_`, `VITE_`, etc.).
-- Internal service URLs are explicit in `apps/api-gateway/.env.example`.
+## Next implementation milestones
+1. Replace `echo` based frontend `dev` scripts with Vite/Next bootstraps.
+2. Add real seat locking state + timeout cleanup.
+3. Add auth + payment abstraction and booking state machine.
+4. Add integration tests covering full booking lifecycle.
