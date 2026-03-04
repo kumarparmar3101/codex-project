@@ -1,17 +1,9 @@
 {
-  "name": "entertainment-clones-monorepo",
+  "name": "codex-project",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.1.0",
-  "description": "District + BookMyShow inspired clone stack",
-  "workspaces": [
-    "apps/*",
-    "packages/*",
-    "services/*"
-  ],
+  "description": "Versioned cinema platform service APIs",
   "scripts": {
-    "check": "npm run lint --workspaces --if-present && npm run test --workspaces --if-present",
-    "dev:district": "npm --workspace @apps/district-web run dev",
-    "dev:bms": "npm --workspace @apps/bookmyshow-web run dev",
-    "dev:gateway": "npm --workspace @apps/api-gateway run dev"
+    "check": "node --check services/catalog/server.js && node --check services/booking/server.js && node --check services/user/server.js && node --check services/payment/server.js && node --check packages/types/index.js"
   }
 }

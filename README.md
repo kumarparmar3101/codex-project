@@ -1,25 +1,22 @@
-# District + BookMyShow Clone (Monorepo Scaffold)
+# Cinema Platform Service Skeleton
 
-This repository now contains the initial scaffold for building two product experiences on top of shared services:
+This repository contains four standalone HTTP services under `services/*` and shared versioned API DTO contracts under `packages/types`.
 
-- `apps/district-web`: District-inspired, experience-first frontend.
-- `apps/bookmyshow-web`: BookMyShow-inspired, movie-first frontend.
-- `apps/api-gateway`: Aggregates catalog, booking, and user services.
-- `services/*`: domain services (`catalog-service`, `booking-service`, `user-service`).
-- `packages/ui`: reusable UI primitives.
-- `packages/types`: shared contracts.
+## Services
 
-## Quick checks
+- `services/catalog/server.js` (port `4001`)
+- `services/booking/server.js` (port `4002`)
+- `services/user/server.js` (port `4003`)
+- `services/payment/server.js` (port `4004`)
 
-```bash
-npm --workspace @services/catalog-service test
-npm --workspace @services/booking-service test
-npm --workspace @services/user-service test
-npm --workspace @apps/api-gateway test
-```
+All endpoints are versioned under `/api/v1/*`.
 
-## Next implementation milestones
-1. Replace `echo` based frontend `dev` scripts with Vite/Next bootstraps.
-2. Add real seat locking state + timeout cleanup.
-3. Add auth + payment abstraction and booking state machine.
-4. Add integration tests covering full booking lifecycle.
+## Shared contracts
+
+Contracts are grouped by bounded context and version in:
+
+- `packages/types/v1/catalog.js`
+- `packages/types/v1/booking.js`
+- `packages/types/v1/user.js`
+- `packages/types/v1/payment.js`
+
